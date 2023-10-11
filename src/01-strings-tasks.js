@@ -6,7 +6,7 @@
  ******************************************************************************************* */
 
 
-/**
+/** 1
  * Returns the result of concatenation of two strings.
  *
  * @param {string} value1
@@ -23,7 +23,7 @@ function concatenateStrings(value1, value2) {
 }
 
 
-/**
+/** 2
  * Returns the length of given string.
  *
  * @param {string} value
@@ -38,7 +38,7 @@ function getStringLength(value) {
   return value.length;
 }
 
-/**
+/** 3
  * Returns the result of string template and given parameters firstName and lastName.
  * Please do not use concatenation, use template string :
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings
@@ -55,7 +55,7 @@ function getStringFromTemplate(firstName, lastName) {
   return `Hello, ${firstName} ${lastName}!`;
 }
 
-/**
+/** 4
  * Extracts a name from template string 'Hello, First_Name Last_Name!'.
  *
  * @param {string} value
@@ -70,7 +70,7 @@ function extractNameFromTemplate(value) {
 }
 extractNameFromTemplate('Hello, John Doe!');
 
-/**
+/** 5
  * Returns a first char of the given string.
  *
  * @param {string} value
@@ -84,7 +84,7 @@ function getFirstChar(value) {
   return value[0];
 }
 
-/**
+/** 6
  * Removes a leading and trailing whitespace characters from string.
  *
  * @param {string} value
@@ -99,7 +99,7 @@ function removeLeadingAndTrailingWhitespaces(value) {
   return value.trim();
 }
 
-/**
+/** 7
  * Returns a string that repeated the specified number of times.
  *
  * @param {string} value
@@ -114,7 +114,7 @@ function repeatString(value, count) {
   return value.repeat(count);
 }
 
-/**
+/** 8
  * Remove the first occurrence of string inside another string
  *
  * @param {string} str
@@ -126,11 +126,10 @@ function repeatString(value, count) {
  *   'I like legends', 'end' => 'I like legs',
  *   'ABABAB','BA' => 'ABAB'
  */
-function removeFirstOccurrences(/* str, value */) {
-  throw new Error('Not implemented');
+function removeFirstOccurrences(str, value) {
+  return str.replace(value, '');
 }
-
-/**
+/** 9
  * Remove the first and last angle brackets from tag string
  *
  * @param {string} str
