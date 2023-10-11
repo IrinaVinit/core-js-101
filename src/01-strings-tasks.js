@@ -145,7 +145,7 @@ function unbracketTag(str) {
 }
 
 
-/**
+/** 10
  * Converts all characters of the specified string into the upper case
  *
  * @param {string} str
@@ -159,7 +159,7 @@ function convertToUpperCase(str) {
   return str.toUpperCase();
 }
 
-/**
+/** 11
  * Extracts e-mails from single string with e-mails list delimeted by semicolons
  *
  * @param {string} str
@@ -174,8 +174,8 @@ function convertToUpperCase(str) {
  *   ],
  *   'info@gmail.com' => ['info@gmail.com']
  */
-function extractEmails(/* str */) {
-  throw new Error('Not implemented');
+function extractEmails(str) {
+  return str.split(';');
 }
 
 /**
