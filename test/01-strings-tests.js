@@ -103,12 +103,12 @@ describe('01-strings-tasks', () => {
   });
 
   it.optional('isString should return true if argument is a string', () => {
-    assert.equal(tasks.isString(), false, 'undefined');
-    assert.equal(tasks.isString(null), false, 'null');
-    assert.equal(tasks.isString([]), false, '[]');
-    assert.equal(tasks.isString('test'), true, 'test');
+    assert.equal(tasks.isString(), false);
+    assert.equal(tasks.isString(null), false);
+    assert.equal(tasks.isString([]), false);
+    assert.equal(tasks.isString('test'), true);
     // eslint-disable-next-line no-new-wrappers
-    assert.equal(tasks.isString(new String('test')), true, "new String('test')");
+    assert.equal(tasks.isString(new String('test')), true);
   });
 
   it.optional('getCardId should return the index of card in the initial deck', () => {

@@ -178,7 +178,7 @@ function extractEmails(str) {
   return str.split(';');
 }
 
-/**
+/** 12
  * Returns the string representation of rectangle with specified width and height
  * using pseudograhic chars
  *
@@ -206,7 +206,7 @@ function getRectangleString(/* width, height */) {
 }
 
 
-/**
+/** 13
  * Encode specified string with ROT13 cipher
  * See details:  https://en.wikipedia.org/wiki/ROT13
  *
@@ -222,11 +222,13 @@ function getRectangleString(/* width, height */) {
  *    => 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm'
  *
  */
-function encodeToRot13(/* str */) {
-  throw new Error('Not implemented');
+function encodeToRot13(str) {
+  const originalAlpha = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  const cipher = 'nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM';
+  return str.replace(/[a-z]/gi, (letter) => cipher[originalAlpha.indexOf(letter)]);
 }
 
-/**
+/** 14
  * Returns true if the value is string; otherwise false.
  * @param {string} value
  * @return {boolean}
@@ -239,12 +241,12 @@ function encodeToRot13(/* str */) {
  *   isString('test') => true
  *   isString(new String('test')) => true
  */
-function isString(/* value */) {
-  throw new Error('Not implemented');
+function isString(value) {
+  return value ? typeof value.valueOf() === 'string' : false;
 }
 
 
-/**
+/** 15
  * Returns playid card id.
  *
  * Playing cards inittial deck inclides the cards in the following order:
