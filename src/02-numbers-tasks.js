@@ -185,7 +185,7 @@ function roundToPowerOfTen(/* num, pow */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 11
  * Returns true is the number is prime; otherwise false.
  * See: https://en.wikipedia.org/wiki/Primality_test
  *
@@ -206,7 +206,7 @@ function isPrime(/* n */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 12
  * Tries to convert value to number and returns it if conversion was successful;
  * otherwise returns default value passed as a second argument.
  *
