@@ -91,7 +91,7 @@ function getLinearEquationRoot(a, b) {
 }
 
 
-/**
+/** 6
  * Returns an angle (in radians) between two vectors given by xi and yi,
  * coordinates in Cartesian plane.
  * See details https://en.wikipedia.org/wiki/Euclidean_vector#Representations
@@ -113,7 +113,7 @@ function getAngleBetweenVectors(/* x1, y1, x2, y2 */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 7
  * Returns a last digit of a integer number.
  *
  * @param {number} value
@@ -125,12 +125,13 @@ function getAngleBetweenVectors(/* x1, y1, x2, y2 */) {
  *     5     => 5
  *     0     => 0
  */
-function getLastDigit(/* value */) {
-  throw new Error('Not implemented');
+function getLastDigit(value) {
+  const str = String(value);
+  return Number(str[str.length - 1]);
 }
 
 
-/**
+/** 8
  * Returns a number by given string representation.
  *
  * @param {string} value
