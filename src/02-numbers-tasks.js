@@ -8,7 +8,7 @@
  ******************************************************************************************* */
 
 
-/**
+/** 1
  * Returns an area of a rectangle given by width and height.
  *
  * @param {number} width
@@ -24,7 +24,7 @@ function getRectangleArea(width, height) {
 }
 
 
-/**
+/** 2
  * Returns a circumference of circle given by radius.
  *
  * @param {number} radius
@@ -39,7 +39,7 @@ function getCircleCircumference(radius) {
   return 2 * radius * Math.PI;
 }
 
-/**
+/** 3
  * Returns an average of two given numbers.
  *
  * @param {number} value1
@@ -70,8 +70,8 @@ function getAverage(/* value1, value2 */) {
  *   (0,0) (1,0)    => 1
  *   (-5,0) (10,-10) => 18.027756377319946
  */
-function getDistanceBetweenPoints(/* x1, y1, x2, y2 */) {
-  throw new Error('Not implemented');
+function getDistanceBetweenPoints(x1, y1, x2, y2) {
+  return Math.hypot(x1 - x2, y1 - y2);
 }
 
 /**
