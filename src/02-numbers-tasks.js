@@ -7,7 +7,6 @@
  *                                                                                           *
  ******************************************************************************************* */
 
-
 /** 1
  * Returns an area of a rectangle given by width and height.
  *
@@ -22,7 +21,6 @@
 function getRectangleArea(width, height) {
   return width * height;
 }
-
 
 /** 2
  * Returns a circumference of circle given by radius.
@@ -90,7 +88,6 @@ function getLinearEquationRoot(a, b) {
   return -b / a;
 }
 
-
 /** 6
  * Returns an angle (in radians) between two vectors given by xi and yi,
  * coordinates in Cartesian plane.
@@ -130,7 +127,6 @@ function getLastDigit(value) {
   return Number(str[str.length - 1]);
 }
 
-
 /** 8
  * Returns a number by given string representation.
  *
@@ -160,9 +156,8 @@ function parseNumberFromString(value) {
  *   1,2,3   => 3.741657386773941
  */
 function getParallelepipedDiagonal(a, b, c) {
-  return Math.sqrt((a ** 2) + (b ** 2) + (c ** 2));
+  return Math.sqrt(a ** 2 + b ** 2 + c ** 2);
 }
-
 
 /** 10
  * Returns the number rounded to specified power of 10.
@@ -202,8 +197,11 @@ function roundToPowerOfTen(/* num, pow */) {
  *   16 => false
  *   17 => true
  */
-function isPrime(/* n */) {
-  throw new Error('Not implemented');
+function isPrime(n) {
+  for (let i = 2; i < n / 2 + 1; i + 1) {
+    if (n % i === 0) return false;
+  }
+  return n !== 1;
 }
 
 /** 12
