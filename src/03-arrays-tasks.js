@@ -34,16 +34,16 @@ function findElement(arr, value) {
  *    2 => [ 1, 3 ]
  *    5 => [ 1, 3, 5, 7, 9 ]
  */
-function generateOdds(len) {
-  const arr = [];
-  const n = 2 * len + 1;
-  for (let i = 1; i <= n; i += 2) {
-    arr.push(i);
-  }
-  return arr;
+function generateOdds(/* len */) {
+  throw new Error('Not implemented');
+  // const arr = Array(len).fill(1);
+  // return arr.map((e, index) => {
+  //   e = index * 2 + 1;
+  //   return el;
+  // });
 }
 
-/**
+/** 3
  * Returns the doubled array - elements of the specified array
  * are repeated twice using original order
  *
@@ -55,11 +55,11 @@ function generateOdds(len) {
  *    [0, 1, 2, 3, 4, 5] => [0, 1, 2, 3, 4, 5,   0, 1, 2, 3, 4, 5]
  *    [] => []
  */
-function doubleArray(/* arr */) {
-  throw new Error('Not implemented');
+function doubleArray(arr) {
+  return [...arr, ...arr];
 }
 
-/**
+/** 4
  * Returns an array of positive numbers from the specified array in original order
  *
  * @param {array} arr
@@ -70,11 +70,11 @@ function doubleArray(/* arr */) {
  *    [-1, 2, -5, -4, 0] => [ 2 ]
  *    [] => []
  */
-function getArrayOfPositives(/* arr */) {
-  throw new Error('Not implemented');
+function getArrayOfPositives(arr) {
+  return arr.filter((item) => item > 0);
 }
 
-/**
+/** 5
  * Returns the array with strings only in the specified array (in original order)
  *
  * @param {array} arr
@@ -85,8 +85,8 @@ function getArrayOfPositives(/* arr */) {
  *    [ 1, 2, 3, 4, 5 ] => []
  *    [ 'cat, 'dog', 'raccoon' ] => [ 'cat', 'dog', 'raccoon' ]
  */
-function getArrayOfStrings(/* arr */) {
-  throw new Error('Not implemented');
+function getArrayOfStrings(arr) {
+  return arr.filter((item) => typeof item === 'string');
 }
 
 /**
