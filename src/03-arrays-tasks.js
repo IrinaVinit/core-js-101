@@ -164,7 +164,7 @@ function getHead(arr, n) {
   return arr.slice(0, n);
 }
 
-/**
+/** 11
  * Returns the n last items of the specified array
  *
  * @param {array} arr
@@ -174,11 +174,11 @@ function getHead(arr, n) {
  *    [ 1, 3, 4, 5 ], 2  => [ 4, 5 ]
  *    [ 'a', 'b', 'c', 'd'], 3  => [ 'b', 'c', 'd' ]
  */
-function getTail(/* arr, n */) {
-  throw new Error('Not implemented');
+function getTail(arr, n) {
+  return arr.slice(-n);
 }
 
-/**
+/** 12
  * Returns CSV representation of two-dimensional numeric array.
  * https://en.wikipedia.org/wiki/Comma-separated_values
  *
@@ -202,7 +202,7 @@ function toCsvText(/* arr */) {
   throw new Error('Not implemented');
 }
 
-/**
+/** 13
  * Transforms the numeric array into the according array of squares:
  *   f(x) = x * x
  *
@@ -213,8 +213,8 @@ function toCsvText(/* arr */) {
  *   [ 0, 1, 2, 3, 4, 5 ] => [ 0, 1, 4, 9, 16, 25 ]
  *   [ 10, 100, -1 ]      => [ 100, 10000, 1 ]
  */
-function toArrayOfSquares(/* arr */) {
-  throw new Error('Not implemented');
+function toArrayOfSquares(arr) {
+  return arr.map((item) => item * item);
 }
 
 /**
