@@ -217,7 +217,7 @@ function toArrayOfSquares(arr) {
   return arr.map((item) => item * item);
 }
 
-/**
+/** 14
  * Transforms the numeric array to the according moving sum array:
  *     f[n] = x[0] + x[1] + x[2] +...+ x[n]
  *  or f[n] = f[n-1] + x[n]
@@ -232,6 +232,16 @@ function toArrayOfSquares(arr) {
  *   [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ] => [ 1, 3, 6, 10, 15, 21, 28, 36, 45, 55 ]
  */
 function getMovingSum(/* arr */) {
+  // let start = 0;
+  // return arr.map((elem, index) => {
+  //   if (index === 0) {
+  //     start = elem;
+  //     return elem;
+  //   }
+  //   elem += start;
+  //   start = elem;
+  //   return elem;
+  // });
   throw new Error('Not implemented');
 }
 
@@ -246,8 +256,12 @@ function getMovingSum(/* arr */) {
  * [ 'a', 'b', 'c' , null ]  => [ "b", null ]
  * [ "a" ] => []
  */
-function getSecondItems(/* arr */) {
-  throw new Error('Not implemented');
+function getSecondItems(/*arr*/) {
+  // const array = [];
+  //  arr.filter((elem, index) => {
+  //   if (index % 2 !== 0) array.push(elem);
+  // });
+  // return array;
 }
 
 /**
